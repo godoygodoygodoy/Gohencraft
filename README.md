@@ -26,7 +26,15 @@ Sua missão é explorar três dimensões (Terra, Inferno e Céu), recuperar suas
 
 ---
 
-## 📂 Estrutura do Projeto
+## �️ Tecnologia
+
+- **Engine:** Godot 4.6.1
+- **Linguagem:** GDScript
+- **Plataformas:** Windows, Linux, macOS
+
+---
+
+## �📂 Estrutura do Projeto
 
 ```
 gohencraft/

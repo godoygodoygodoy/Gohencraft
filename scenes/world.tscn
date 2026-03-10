@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk2xfv3pmw0kc"]
+
+[ext_resource type="Script" path="res://scripts/world/world.gd" id="1_world"]
+
+[sub_resource type="Environment" id="Environment_world"]
+background_mode = 1
+background_color = Color(0.529412, 0.807843, 0.921569, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_world")
+render_distance = 2
+world_seed = 12345
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, -0.75, 0.433013, 0, 50, 0)
+light_energy = 0.8
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_world")

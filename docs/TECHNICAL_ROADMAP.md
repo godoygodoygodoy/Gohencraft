@@ -1,5 +1,22 @@
 # GOHENCRAFT - Roadmap Técnico
 
+## Especificações Técnicas
+
+**Engine:** Godot 4.6.1  
+**Linguagem:** GDScript  
+**Plataformas-alvo:** Windows, Linux, macOS  
+**Estilo Gráfico:** Pixel Art 16x16  
+**Arquitetura:** Voxel-based (chunks)
+
+### Requisitos Sistema Mínimos (Estimados)
+- **OS:** Windows 10 64-bit / Linux / macOS  
+- **Processador:** Intel Core i3 ou equivalente  
+- **Memória RAM:** 4 GB  
+- **Gráficos:** OpenGL 3.3 / Vulkan  
+- **Armazenamento:** 1 GB
+
+---
+
 ## Fase 1: Fundação (Meses 1-3)
 
 ### Core Engine

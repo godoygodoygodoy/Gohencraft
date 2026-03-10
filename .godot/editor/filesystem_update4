@@ -1,0 +1,6 @@
+res://scripts/world/chunk.gd
+res://scripts/world/world.gd
+res://scripts/world/block_textures.gd
+res://scripts/player/player.gd
+res://scripts/inventory/inventory_system.gd
+res://scripts/ui/inventory_ui.gd

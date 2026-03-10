@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8n2yqy2xo5gq"]
+
+[ext_resource type="PackedScene" uid="uid://dk2xfv3pmw0kc" path="res://scenes/world.tscn" id="1_world"]
+[ext_resource type="PackedScene" uid="uid://b3wq7xvl5x7dp" path="res://scenes/player.tscn" id="2_player"]
+[ext_resource type="Script" path="res://scripts/ui/debug_info.gd" id="3_debug"]
+[ext_resource type="PackedScene" uid="uid://bqm3vx7y8kxw8" path="res://scenes/inventory_ui.tscn" id="4_inventory"]
+
+[node name="Main" type="Node3D"]
+
+[node name="World" parent="." instance=ExtResource("1_world")]
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34, 0)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Crosshair" type="CenterContainer" parent="UI/HUD"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CrosshairSprite" type="ColorRect" parent="UI/HUD/Crosshair"]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 2
+color = Color(1, 1, 1, 0.8)
+
+[node name="DebugInfo" type="Label" parent="UI/HUD"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 250.0
+offset_bottom = 100.0
+text = "FPS: 60
+Pos: 0, 0, 0
+Chunk: 0, 0"
+script = ExtResource("3_debug")
+
+[node name="InventoryUI" parent="UI" instance=ExtResource("4_inventory")]

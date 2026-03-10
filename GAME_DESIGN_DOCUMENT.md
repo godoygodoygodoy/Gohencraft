@@ -6,6 +6,7 @@
 **Gênero:** Sandbox, RPG, Mundo Aberto  
 **Estilo Visual:** Pixel Art 16x16  
 **Modos de Jogo:** Singleplayer e Multiplayer Cooperativo  
+**Plataforma:** Godot 4.6.1  
 **Inspirações:** Minecraft, Terraria, RPGs de Progressão, Mitologia Grega
 
 ## Conceito Central
